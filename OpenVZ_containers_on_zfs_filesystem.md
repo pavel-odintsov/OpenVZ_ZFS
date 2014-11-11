@@ -32,6 +32,7 @@ DISK_QUOTA=no
 Download image:
 ```bash
 vztmpl-dl debian-7.0-x86_64-minimal
+```
 
 Extract template files into container's private folder:
 ```bash
