@@ -6,7 +6,7 @@ vzctl set $CTID --onboot yes --disabled no --quotaugidlimit 2048 --ram 4G --swap
 vzctl start $CTID
 ```
 
-Create ZFS volume:
+Create ZFS mirror pool (you can use raidz, raidz2, raidz3 instead mirror):
 ```bash
 zpool create data mirror /dev/sda3 /dev/sdb3
 ```
