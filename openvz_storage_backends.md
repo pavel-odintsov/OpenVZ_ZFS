@@ -16,3 +16,4 @@ Table with storage backends comparison
 | Effective cache | Normal, Linux page cache | Normal, Linux page cache | Normal, Linux page cache | Excellet, L2ARC cache |
 | Live migration | Very slow and impossible sometimes | Very Fast | Not applicable | Very fast (theoretically) |
 | Second level quotes in Linux (inside container) | Yes | Yes | Yes | No |
+| vzctl integration | Complete | Complete | No integration, big amount of manual operations | No integration, small amount of manual operations |
