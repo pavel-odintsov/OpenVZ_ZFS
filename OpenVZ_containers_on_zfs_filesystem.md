@@ -1,3 +1,10 @@
+Install ZFS On Linux:
+```bash
+yum localinstall --nogpgcheck https://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+yum localinstall --nogpgcheck http://archive.zfsonlinux.org/epel/zfs-release.el6.noarch.rpm
+yum install vzkernel-devel zfs
+```
+
 Create ZFS mirror pool (you can use raidz, raidz2, raidz3 instead mirror):
 ```bash
 zpool create data mirror /dev/sda3 /dev/sdb3
@@ -37,8 +44,12 @@ Container destroy:
 export CTID=10001
 vzctl stop $CTID
 zfs destroy data/$CTID
-vzctl destorey $CTID
+vzctl destroy $CTID
 ```
+Manage disk space limit for container:
+```bash
+zfs set quota=20G data/$CTID
+``` 
 
 Check perfectly working container:
 ```bash
