@@ -1,6 +1,6 @@
 Table with storage backends comparison
 
-| Quality | OpenVZ simfs          | OpenVZ ploop       | LVM         | ZFS |
+| Quality | OpenVZ simfs over ext4         | OpenVZ ploop       | LVM volumes with ext4         | ZFS |
 | --------| -------------  |-------------| ------------| -------|
 | Maturity| 10+ years      | Since 2012  | Since 1998  | Since 2014 (Linux), Since 2005 (Solaris)        |
 | Speed   | Very fast      | Fast        | Fast        | Fast enough |
@@ -15,3 +15,4 @@ Table with storage backends comparison
 | Compression | No | No | No | Yes |
 | Effective cache | Normal, Linux page cache | Normal, Linux page cache | Normal, Linux page cache | Excellet, L2ARC cache |
 | Live migration | Very slow and impossible sometimes | Very Fast | Not applicable | Very fast (theoretically) |
+| Second level quotes in Linux (inside container) | Yes | Yes | Yes | No |
