@@ -14,6 +14,6 @@ Table with storage backends comparison
 | Deduplication | No | No | No | Yes |
 | Compression | No | No | No | Yes |
 | Effective cache | Normal, Linux page cache | Normal, Linux page cache | Normal, Linux page cache | Excellet, L2ARC cache |
-| Live migration | Very slow and impossible sometimes | Very Fast | Not applicable | Very fast (theoretically) |
+| Live migration | Very slow and impossible sometimes (inode change can broke some apps) | Very Fast | Not applicable | Very fast (theoretically) |
 | Second level quotes in Linux (inside container) | Yes | Yes | Yes | No |
 | vzctl integration | Complete | Complete | No integration, big amount of manual operations | No integration, small amount of manual operations |
