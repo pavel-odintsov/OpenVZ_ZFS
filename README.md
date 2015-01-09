@@ -1,5 +1,7 @@
 Hello!
 
+If you are worrying about ZFS on Linux stability you should read this [perfect manual from Richard Yao](https://clusterhq.com/blog/state-zfs-on-linux/).
+
 You can find here bunch of tests and docs about ZFS support in OpenVZ and vice versa :)
 
 * [Comparison table of all availible storage backends for OpenVZ](openvz_storage_backends.md)
