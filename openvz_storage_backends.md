@@ -3,6 +3,7 @@ Table with storage backends comparison
 | Quality | OpenVZ simfs over ext4         | OpenVZ ploop       | LVM volumes with ext4         | ZFS |
 | --------| -------------  |-------------| ------------| -------|
 | Maturity| 10+ years      | Since 2012  | Since 1998  | Since 2014 (Linux), Since 2005 (Solaris)        |
+| Wasted space due to architecture | No | Yes, up to 20% for allocated ext4 meta | N/A | Zero |
 | Speed   | Very fast      | Fast        | Fast        | Fast enough |
 | I/O isolation | Very bad (shared filesystem journal) | Excellent   | Excellent   | Excellent |
 | Wasted space amount      | Very small (ext4 block size) | Big enoungh (ploop uses 1MB block) | Small (ext4 block size) | Extremely small (veriable block size) | 
