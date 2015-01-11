@@ -1,3 +1,5 @@
+## Seven problems of Ploop disk layout
+
 This list will describe weak sides of OpenVZ ploop disk layout system. This issues collected in few years of active use of ploop and simfs on few hundreds production servers.
 
 - Ploop is very fragile because index block (BAT) located in first few MB of file and haven't any backup in another place. If you lost this block you can't do anything with your data. For example, ext4 have multiple copies of superblock in different places of block device. Details: [ploop specification](https://openvz.org/Ploop/format).
