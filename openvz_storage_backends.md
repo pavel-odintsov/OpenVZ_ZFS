@@ -4,7 +4,7 @@ Table with storage backends comparison
 | --------| -------------  |-------------| ------------| -------|
 | Maturity| 10+ years      | Since 2012  | Since 1998  | Since 2014 (Linux), Since 2005 (Solaris)        |
 | Wasted space due to architecture | No | Yes, up to 20% for allocated ext4 metadata | N/A | Zero |
-| Speed   | Very fast      | Fast        | Fast        | Fast enough |
+| Speed   | Very fast with small amount of containers per node      | Fast in any case        | Fast in any case       | Fast enough in any case|
 | I/O isolation | Very bad (shared filesystem journal) | Excellent   | Excellent   | Excellent |
 | Wasted space amount      | Very small (ext4 block size) | Big enough (ploop uses 1MB block) | Small (ext4 block size) | Extremely small (variable block size) | 
 | Ability to overcommit disk space (provide more space for containers then available on server now) | Yes | Yes | No | Yes |
