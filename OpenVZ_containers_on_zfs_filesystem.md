@@ -28,7 +28,7 @@ vzctl set $CTID --onboot yes --disabled no --quotaugidlimit 2048 --ram 4G --swap
 vzctl start $CTID
 ```
 
-We use --private '/data/$VEID/disk' instead /data/$VEID due to vzctl bug:
+We use --private '/data/$VEID/disk' instead /data/$VEID due to vzctl [bug](https://github.com/pavel-odintsov/OpenVZ_ZFS/blob/master/OpenVZ_containers_on_zfs_filesystem.md):
 ```bash
 vzctl create $CTID --ostemplate debian-7.0-x86_64-minimal --layout simfs --ipadd 5.45.112.45 --hostname zfs-tests.fastvps.ru --config vswap-2g --diskspace 10G --private '/data/$VEID'
 Creating container private area (debian-7.0-x86_64-minimal)
