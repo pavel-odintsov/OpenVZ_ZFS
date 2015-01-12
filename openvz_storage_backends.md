@@ -10,6 +10,7 @@ Table with storage backends comparison
 | Ability to overcommit disk space (provide more space for containers then available on server now) | Yes | Yes | No | Yes |
 | Reliability | Very small, big amount of files produce ext4 corruption so often | Small, fsck, power loss and HW Raid without cache can kill whole data | Good enough (but LVM metadata can be corrupted completely) | Excellent (no write hole, checksumming and COW) | 
 | Backup speed | Very slow (in case of big number of files ) | Very fast block level | Very fast | Very fast (with ability to send via network) |
+| Incremental backup support on filesystem level | No | No | No | Yes |
 | Backup consistency | Inconsistent | Consistent with snapshots | Consistent with snapshots | Consistent with checksummed snapshots |
 | Snapshots | No | Yes | Yes | Yes |
 | Deduplication | No | No | No | Yes |
