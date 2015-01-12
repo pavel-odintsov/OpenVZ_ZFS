@@ -17,6 +17,6 @@ Table with storage backends comparison
 | Compression | No | No | No | Yes |
 | Effective cache | Normal, Linux page cache | Normal, Linux page cache | Normal, Linux page cache | Excellent, L2ARC cache |
 | Live migration | Very slow and impossible sometimes (inode change can broke some apps) | Very Fast | Not applicable | Very fast (theoretically) |
-| Second level quotes in Linux (inside container) | Yes | Yes | Yes | No |
+| Second level quotes in Linux (inside container) | Yes | Yes | Yes | No, but [possible](https://github.com/zfsonlinux/zfs/pull/2577) |
 | vzctl integration | Complete | Complete | No integration, big amount of manual operations | No integration, small amount of manual operations |
 |Troubles in case of "out of space" on main storage| No | Problems possible but correctly handled by ploop code   | Not applicable (no overcommit feature) | No | 
