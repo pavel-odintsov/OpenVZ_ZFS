@@ -1,6 +1,6 @@
 Table with storage backends comparison
 
-| Quality | OpenVZ simfs over ext4         | OpenVZ ploop       | LVM volumes with ext4         | ZFS (container on native ZFS volume,)|
+| Quality | OpenVZ simfs over ext4         | OpenVZ ploop       | LVM volumes with ext4         | ZFS (container on native ZFS volume)|
 | --------| -------------  |-------------| ------------| -------|
 | Maturity| 10+ years      | Since 2012  | Since 1998  | Since 2014 (Linux), Since 2005 (Solaris)        |
 | Wasted space due to architecture | No | Yes, up to 20% for allocated ext4 metadata | N/A | Zero |
