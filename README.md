@@ -12,6 +12,7 @@ You can find here bunch of tests and docs about ZFS support in OpenVZ and vice v
 * [Different cases of behaviour zvol with ext4 and OpenVZ, russian](zvol_ext4_cases.pdf)
 * [Ideas about OpenVZ container on ZFS zvol with ext4, russian](openvz_and_zfs_zvol_ext4.pdf)
 * [Running KVM virtual machines on top of OpenVZ ploop](http://www.stableit.ru/2014/07/installing-kvm-virtual-machines-on.html)
+* [Useful ZFS articles](useful_zfs_articles.md)
 
 How you can help?
 * Do performance tests!
