@@ -1,4 +1,6 @@
-Install ZFS On Linux:
+Install ZFS On Linux with [official guide for OpenVZ](http://zfsonlinux.org/epel.html). 
+
+There are copy of this guide:
 ```bash
 yum localinstall --nogpgcheck https://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 yum localinstall --nogpgcheck http://archive.zfsonlinux.org/epel/zfs-release.el6.noarch.rpm
@@ -28,7 +30,7 @@ vzctl set $CTID --onboot yes --disabled no --quotaugidlimit 2048 --ram 4G --swap
 vzctl start $CTID
 ```
 
-We use --private '/data/$VEID/disk' instead /data/$VEID due to vzctl [bug](https://github.com/pavel-odintsov/OpenVZ_ZFS/blob/master/OpenVZ_containers_on_zfs_filesystem.md):
+We use --private '/data/$VEID/disk' instead /data/$VEID due to vzctl [bug which already fixed in upstream](https://github.com/pavel-odintsov/OpenVZ_ZFS/blob/master/OpenVZ_containers_on_zfs_filesystem.md):
 ```bash
 vzctl create $CTID --ostemplate debian-7.0-x86_64-minimal --layout simfs --ipadd 5.45.112.45 --hostname zfs-tests.fastvps.ru --config vswap-2g --diskspace 10G --private '/data/$VEID'
 Creating container private area (debian-7.0-x86_64-minimal)
