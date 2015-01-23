@@ -48,10 +48,6 @@ vzctl stop $CTID
 zfs destroy data/$CTID
 vzctl destroy $CTID
 ```
-Manage disk space limit for container:
-```bash
-zfs set quota=20G data/$CTID
-``` 
 
 Check perfectly working container:
 ```bash
