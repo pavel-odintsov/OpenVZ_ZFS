@@ -13,6 +13,7 @@ Table with storage backends comparison
 | Backup speed | Very slow (in case of big number of files ) | Very fast block level | Very fast | Very fast (with ability to send via network) |
 | Incremental backup support on filesystem level | No | No | No | Yes |
 | Backup consistency | Inconsistent | Consistent with snapshots | Consistent with snapshots | Consistent with checksummed snapshots |
+|Maximum disk space| As ext4 | 16 TB https://wiki.openvz.org/Ploop/Limits | As ext4 | 256 zebibytes (no limits) |
 | Snapshots | No | Yes | Yes | Yes |
 | Deduplication | No | No | No | Yes |
 | Compression | No | No | No | Yes |
