@@ -26,7 +26,7 @@ zfs create data/$CTID
 # Set quota for ZFS volume
 zfs set quota=10G data/$CTID
 vzctl create $CTID --ostemplate debian-7.0-x86_64-minimal --layout simfs --ipadd 5.45.112.45 --hostname zfs-tests.fastvps.ru --config vswap-2g --diskspace 10G --private '/data/$VEID/disk'
-vzctl set $CTID --onboot yes --disabled no --quotaugidlimit 2048 --ram 4G --swap 2G --cpus 8 --ioprio 4 --cpuunits 2000 --cpulimit 800 --numproc 1024 --numiptent 256 --save
+vzctl set $CTID --onboot yes --disabled no --ram 4G --swap 2G --cpus 8 --ioprio 4 --cpuunits 2000 --cpulimit 800 --numproc 1024 --numiptent 256 --save
 vzctl start $CTID
 ```
 
