@@ -1,5 +1,7 @@
 Hello!
 
+[![Join the chat at https://gitter.im/pavel-odintsov/OpenVZ_ZFS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pavel-odintsov/OpenVZ_ZFS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 If you are worrying about ZFS on Linux stability you should read this [perfect manual from Richard Yao](https://clusterhq.com/blog/state-zfs-on-linux/).
 
 You can find here bunch of tests and docs about ZFS support in OpenVZ and vice versa :)
@@ -21,4 +23,3 @@ How you can help?
 * Contribute patches to ZFS! 
 
 
-[![Join the chat at https://gitter.im/pavel-odintsov/OpenVZ_ZFS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pavel-odintsov/OpenVZ_ZFS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
