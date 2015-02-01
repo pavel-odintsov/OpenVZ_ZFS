@@ -19,3 +19,6 @@ How you can help?
 * Provide feedback about real world experience with ZFS On Linux
 * Find bugs in ZFS and reproduce it :)
 * Contribute patches to ZFS! 
+
+
+[![Join the chat at https://gitter.im/pavel-odintsov/OpenVZ_ZFS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pavel-odintsov/OpenVZ_ZFS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
