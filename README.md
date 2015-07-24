@@ -7,6 +7,7 @@ If you are worrying about ZFS on Linux stability you should read this [perfect m
 You can find here bunch of tests and docs about ZFS support in OpenVZ and vice versa :)
 
 * [Comparison table of all available storage backends for OpenVZ](openvz_storage_backends.md)
+* [Disk space effectiveness of ZFS usage for OpenVZ](http://www.stableit.ru/2015/07/effectiveness-of-zfs-usage-for-openvz.html)
 * [Why ploop is not an ideal disk layout for OpenVZ](ploop_issues.md)
 * [Installing OpenVZ container in ZFS native volume, english](OpenVZ_containers_on_zfs_filesystem.md)
 * [Using ZFS with OpenVZ, zvol with ext4, english](http://www.stableit.ru/2014/07/using-zfs-with-openvz-openvzfs.html)
