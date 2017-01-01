@@ -3,7 +3,7 @@ Install ZFS On Linux with [official guide for OpenVZ](http://zfsonlinux.org/epel
 There are copy of this guide:
 ```bash
 yum localinstall --nogpgcheck https://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-yum localinstall --nogpgcheck http://archive.zfsonlinux.org/epel/zfs-release.el6.noarch.rpm
+yum localinstall --nogpgcheck http://download.zfsonlinux.org/epel/zfs-release.el6.noarch.rpm
 yum install vzkernel-devel zfs
 ```
 
